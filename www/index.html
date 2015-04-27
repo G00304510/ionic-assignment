@@ -1,178 +1,416 @@
 <!DOCTYPE html>
+
 <html>
+
   <head>
+
     <meta charset="utf-8">
+
     <meta name="viewport" content="initial-scale=1, maximum-scale=1, user-scalable=no, width=device-width">
+
     <title></title>
 
+
+
     <link href="lib/ionic/css/ionic.css" rel="stylesheet">
+
     <link href="css/style.css" rel="stylesheet">
 
+
+
     <!-- IF using Sass (run gulp sass first), then uncomment below and remove the CSS includes above
+
     <link href="css/ionic.app.css" rel="stylesheet">
+
     -->
 
+
+
     <!-- ionic/angularjs js -->
+
     <script src="lib/ionic/js/ionic.bundle.js"></script>
 
+
+
     <!-- cordova script (this will be a 404 during development) -->
+
     <script src="cordova.js"></script>
 
+
+
     <!-- your app's js -->
+
     <script src="js/app.js"></script>
+
   </head>
+
   <body ng-app="calorific">
 
+
+
     <ion-pane>
+
       <ion-header-bar class="bar-dark">
+
         <h1 class="title">Cal Pal</h1>
+
       </ion-header-bar>
+
 	  
+
       <ion-content>
+
 	  <div class="card">
-			<center><h2><div id="Calories">
+
+			<center><h2><div id="totalCal">
+
 				0
+
 				</div></h2></center>
+
 		</div>		
+
 		<div class="list">
 
+
+
 		<div class="item item-divider">
+
 		Breakfast
+
 		
+
 			<div class="item item-button-left">
+
 				Full Irish
-				<button class="button button-positive">
+
+				<button class="button button-positive" onclick="incDec('+450')">
+
 				<i class="icon ion-android-add"></i>
+
 				</button>
+
 			</div>
+
 				
+
 			<div class="item item-button-left">
+
 				Corn Flakes
-				<button class="button button-positive">
+
+				<button class="button button-positive" onclick="incDec('+100')">
+
 				<i class="icon ion-android-add"></i>
+
 				</button>
+
 			</div>	
+
 		
+
 			<div class="item item-button-left">
+
 				Cheerios
-				<button class="button button-positive">
+
+				<button class="button button-positive" onclick="incDec('+100')">
+
 				<i class="icon ion-android-add"></i>
+
 				</button>
+
 			</div>
+
 		</div>		
+
+
 
 	<div class="list">
 
+
+
 		<div class="item item-divider">
+
 		Lunch
+
 		
+
 			<div class="item item-button-left">
+
 				BLT
+
 				<button class="button button-positive">
+
 				<i class="icon ion-android-add"></i>
+
 				</button>
+
 			</div>
+
 				
+
 			<div class="item item-button-left">
+
 				Club Sandwich
+
 				<button class="button button-positive">
+
 				<i class="icon ion-android-add"></i>
+
 				</button>
+
 			</div>	
+
 		
+
 			<div class="item item-button-left">
+
 				Curry Chips
+
 				<button class="button button-positive">
+
 				<i class="icon ion-android-add"></i>
+
 				</button>
+
 			</div>
+
 			
+
 		</div>	
+
 			<div class="list">
 
+
+
 		<div class="item item-divider">
+
 		Dinner
+
 		
+
 			<div class="item item-button-left">
+
 				Roast Beef
+
 				<button class="button button-positive">
+
 				<i class="icon ion-android-add"></i>
+
 				</button>
+
 			</div>
+
 				
+
 			<div class="item item-button-left">
+
 				Roast Pork
+
 				<button class="button button-positive">
+
 				<i class="icon ion-android-add"></i>
+
 				</button>
+
 			</div>	
+
 		
+
 			<div class="item item-button-left">
+
 				Chicken
+
 				<button class="button button-positive">
+
 				<i class="icon ion-android-add"></i>
+
 				</button>
+
 			</div>
+
 				
+
 		</div>	
+
 				<div class="list">
 
+
+
 		<div class="item item-divider">
+
 		Beverages
+
 		
+
 			<div class="item item-button-left">
+
 				Black Coffee
+
 				<button class="button button-positive">
+
 				<i class="icon ion-android-add"></i>
+
 				</button>
+
 			</div>
+
 				
+
 			<div class="item item-button-left">
+
 				White Coffee
+
 				<button class="button button-positive">
+
 				<i class="icon ion-android-add"></i>
+
 				</button>
+
 			</div>	
+
 		
+
 			<div class="item item-button-left">
+
 				Black Tea
+
 				<button class="button button-positive">
+
 				<i class="icon ion-android-add"></i>
+
 				</button>
+
 			</div>
+
 			
+
 			<div class="item item-button-left">
+
 				White Tea
+
 				<button class="button button-positive">
+
 				<i class="icon ion-android-add"></i>
+
 				</button>
+
 			</div>
+
 			
+
 			<div class="item item-button-left">
+
 				Sugar
+
 				<button class="button button-positive">
+
 				<i class="icon ion-android-add"></i>
+
 				</button>
+
 			</div>
+
 			
+
 			<div class="item item-button-left">
+
 				Orange Juice
+
 				<button class="button button-positive">
+
 				<i class="icon ion-android-add"></i>
+
 				</button>
+
 			</div>
+
 			
+
 			<div class="item item-button-left">
+
 				Coke
+
 				<button class="button button-positive">
+
 				<i class="icon ion-android-add"></i>
+
 				</button>
+
 			</div>
+
 		</div>
+
 			<br/>
-			<center><a class="button">Reset</a></center>
+
+			<!-- This is the reset button -->
+
+			<center><a class="button button-large button-assertive" onclick="reset()">Reset</a></center>
+
+		
 
       </ion-content>
+
     </ion-pane>
+
+	
+
+	<script type="text/javascript">
+
+	
+
+	function incDec(plusMinus) {
+
+      var plusMinus = parseInt(plusMinus);
+
+      var currentCal = parseInt(document.getElementById("totalCal").innerHTML) + plusMinus;
+
+      //alert(currentLife);
+
+     
+
+     if(currentCal < 0)
+
+     {
+
+       currentCal = 0;
+
+     }
+
+     else if(currentCal > 5000)
+
+     {
+
+       currentCal = 5000;
+
+	   alert("You fat fuck. Don't eat any more!");
+
+     }
+
+     else
+
+     {
+
+       document.getElementById("totalCal").innerHTML = currentCal;
+
+     }
+
+   }  
+
+    
+
+    function reset() {
+
+      document.getElementById("totalCal").innerHTML = 0;
+
+      
+
+    } 
+
+	</script>
+
+	
+
   </body>
+
 </html>
+
