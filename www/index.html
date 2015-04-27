@@ -374,7 +374,7 @@
 
        currentCal = 0;
 
-     }
+     } // This prevents the calorie count from going below zero, though it is somewhat redundant as there are no negative values in the variables provided above.
 
      else if(currentCal > 5000)
 
@@ -392,7 +392,7 @@
 
        document.getElementById("totalCal").innerHTML = currentCal;
 
-     }
+     } // This returns the total value to the card.
 
    }  
 
@@ -404,13 +404,13 @@
 
       
 
-    } 
+    } // This function resets the calorie counter.
 
-	</script>
+	</script><!-- Marks the end of the script tags-->
 
 	
 
-  </body>
+  </body><!--end of body-->
 
-</html>
+</html><!--end of html-->
 
