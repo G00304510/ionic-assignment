@@ -10,7 +10,7 @@
 
     <title></title>
 
-
+	<!--Nick Tubritt G00304510-->
 
     <link href="lib/ionic/css/ionic.css" rel="stylesheet">
 
@@ -44,13 +44,13 @@
 
   </head>
 
-  <body ng-app="calorific">
+  <body ng-app="calorific"><!--This uses the angular js app function as set by the template that was required-->
 
 
 
     <ion-pane>
 
-      <ion-header-bar class="bar-dark">
+      <ion-header-bar class="bar-dark"><!--This changes the header bar format to dark-->
 
         <h1 class="title">Cal Pal</h1>
 
@@ -59,8 +59,8 @@
 	  
 
       <ion-content>
-
-	  <div class="card">
+	
+	  <div class="card"><!--this card is used to display the calorie intake as defined by each button click-->
 
 			<center><h2><div id="totalCal">
 
@@ -70,23 +70,23 @@
 
 		</div>		
 
-		<div class="list">
+		<div class="list"><!--This creates an item list-->
 
 
 
-		<div class="item item-divider">
+		<div class="item item-divider"><!-- this creates a divider for items in the list, allowing them to be placed into different categories-->
 
 		Breakfast
 
 		
 
-			<div class="item item-button-left">
+			<div class="item item-button-left"><!--this creates a button in the list and aligns it to the left-->
 
 				Full Irish
 
-				<button class="button button-positive" onclick="incDec('+450')">
+				<button class="button button-positive" onclick="incDec('+450')"><!--this makes the button active and increases the amount onclick by what is in the "('')"-->
 
-				<i class="icon ion-android-add"></i>
+				<i class="icon ion-android-add"></i><!--This makes the + icon -->
 
 				</button>
 
@@ -94,13 +94,13 @@
 
 				
 
-			<div class="item item-button-left">
+			<div class="item item-button-left"><!--this creates a button in the list and aligns it to the left-->
 
 				Corn Flakes
 
-				<button class="button button-positive" onclick="incDec('+100')">
+				<button class="button button-positive" onclick="incDec('+100')"><!--this makes the button active and increases the amount onclick by what is in the "('')"-->
 
-				<i class="icon ion-android-add"></i>
+				<i class="icon ion-android-add"></i><!--This makes the + icon -->
 
 				</button>
 
@@ -108,13 +108,13 @@
 
 		
 
-			<div class="item item-button-left">
+			<div class="item item-button-left"><!--this creates a button in the list and aligns it to the left-->
 
 				Cheerios
 
-				<button class="button button-positive" onclick="incDec('+100')">
+				<button class="button button-positive" onclick="incDec('+100')"><!--this makes the button active and increases the amount onclick by what is in the "('')"-->
 
-				<i class="icon ion-android-add"></i>
+				<i class="icon ion-android-add"></i><!--This makes the + icon -->
 
 				</button>
 
@@ -124,11 +124,11 @@
 
 
 
-	<div class="list">
+	<div class="list"><!--This creates a new item list-->
 
 
 
-		<div class="item item-divider">
+		<div class="item item-divider"><!-- this creates a new divider for items in the list, allowing them to be placed into different categories-->
 
 		Lunch
 
@@ -178,11 +178,11 @@
 
 		</div>	
 
-			<div class="list">
+			<div class="list"><!--This creates a new item list-->
 
 
 
-		<div class="item item-divider">
+		<div class="item item-divider"><!-- this creates a new divider for items in the list, allowing them to be placed into different categories-->
 
 		Dinner
 
@@ -344,7 +344,7 @@
 
 			<!-- This is the reset button -->
 
-			<center><a class="button button-large button-assertive" onclick="reset()">Reset</a></center>
+			<center><a class="button button-large button-assertive" onclick="reset()">Reset</a></center><!--this creates the reset button -->
 
 		
 
@@ -354,7 +354,7 @@
 
 	
 
-	<script type="text/javascript">
+	<script type="text/javascript"><!--This area contains the javascript responsible for adding the various amounts and resetting the values to zero to begin anwe -->
 
 	
 
@@ -364,7 +364,7 @@
 
       var currentCal = parseInt(document.getElementById("totalCal").innerHTML) + plusMinus;
 
-      //alert(currentLife);
+      //alert(currentCal);
 
      
 
@@ -382,7 +382,7 @@
 
        currentCal = 5000;
 
-	   alert("You fat fuck. Don't eat any more!");
+	   alert("Did you forget to reset?!"); // Adds a comment if the value reaches 5000.
 
      }
 
