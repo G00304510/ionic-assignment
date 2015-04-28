@@ -1,5 +1,3 @@
-# Mobile Application Development Project Template
-You must use this template to start your project.
+# Cal Pal version 1 is an app designed to count the amount of calories taken by the user on a daily basis.  It uses the project template which has been expended upon to include a categorized item list, avatar icons and buttons.
 
-## How to get this template
-You can clone it using 'git clone <url>' where <url> is the ssh url on the right, or you can click "Download ZIP" on the right and start from there.
+## The app was created using notepadd++ to alter the html, javasscript and css. It does not incorporate local storage however.
