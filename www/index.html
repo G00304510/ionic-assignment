@@ -46,7 +46,7 @@
 
   <body ng-app="calorific"><!--This uses the angular js app function as set by the template that was required-->
 
-
+	
 
     <ion-pane>
 
@@ -76,20 +76,24 @@
 
 		<div class="item item-divider"><!-- this creates a divider for items in the list, allowing them to be placed into different categories-->
 
-		Breakfast
+		<h1>Breakfast</h1>
 
 		
 
-			<div class="item item-button-left"><!--this creates a button in the list and aligns it to the left-->
+			<div class="item item-button-right"><!--this creates a button in the list and aligns it to the left-->
 
-				Full Irish
-
+				<!--Full Irish-->
+				<a class="item item-thumbnail-left" href="images/full_irish_breakfast.jpg">
+				  <img src="images/full_irish_breakfast.jpg">
+				  <h2>Full Irish</h2>
+				</a>
 				<button class="button button-positive" onclick="incDec('+450')"><!--this makes the button active and increases the amount onclick by what is in the "('')"-->
 
 				<i class="icon ion-android-add"></i><!--This makes the + icon -->
-
+				
+				
 				</button>
-
+				
 			</div>
 
 				
@@ -130,7 +134,7 @@
 
 		<div class="item item-divider"><!-- this creates a new divider for items in the list, allowing them to be placed into different categories-->
 
-		Lunch
+		<h1>Lunch</h1>
 
 		
 
@@ -184,7 +188,7 @@
 
 		<div class="item item-divider"><!-- this creates a new divider for items in the list, allowing them to be placed into different categories-->
 
-		Dinner
+		<h1>Dinner</h1>
 
 		
 
@@ -238,7 +242,7 @@
 
 		<div class="item item-divider">
 
-		Beverages
+		<h1>Beverages</h1>
 
 		
 
